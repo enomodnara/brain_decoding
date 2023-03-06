@@ -2,7 +2,7 @@
 
 This repository contains the code to support the "Semantic Brain Decoding" paper.
 
-![Pipeline](figures/pipeline_knn.png)
+![Pipeline](https://user-images.githubusercontent.com/127113003/223122943-e42de9e2-38f3-4569-a988-7ff005d80393.png)
 
 In this work, the idea is that the brain process images extracting relevant information in form of features which are similar to the ones extracted by the latent space (last layer before classification) of a CNN. Those "Semantic" features lives in a space (fMRI measurements) that could be homeomorphic to the latent space of the CNN.
 We exploited a linear model to estimate the features from brain activity and a kNN to mimic a bottom-up and top-down perception process in the visual cortex and use the classification labels to condition a latent diffusion model to generate images with similar concepts and contents to the target ones used as stimuli during the fMRI experiment, starting from this neurophysiological data.
@@ -19,16 +19,16 @@ To reproduce the results, you will need to:
 
 Below, you can see the comparison between our reconstructions and related work over the same dataset.
 
-![Comparison](figures/comparison.png)
+![Comparison](https://user-images.githubusercontent.com/127113003/223122902-13fb57a1-34bb-4df4-86b2-12cf572cb1df.png)
 
 
-To add some quantitative measurements to our work, we measured the Wu-Palmer distance over predicted and real classes to measure semantic similarity. Given the complexity of the theme, we also included a human evaluation of generated images asking to human observer to choose between model generated images and random ones which one is closer to the target images.
+To add some quantitative measurements to our work, we measured the Wu-Palmer distance over predicted and real classes to measure semantic similarity
 
 
+![Grafo](https://user-images.githubusercontent.com/127113003/223122932-afe01c55-3605-477d-88bf-509047751ee1.png)
 
-![Grafo](figures/grafo.png)
+![WuPalmer](https://user-images.githubusercontent.com/127113003/223122947-f8f4f8b9-6a38-45a8-b90c-eba620a69d88.png)
 
-![WuPalmer](figures/wupalmer.png)
-![Human Evaluation](figures/human_evaluation.png)
+
 
 
